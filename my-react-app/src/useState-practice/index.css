@@ -1,0 +1,23 @@
+.container{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgb(122, 121, 121);
+    padding: 0px;
+    margin: 0px;
+    
+}
+.count-value{
+    font-size: 8em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.counter-button{
+    width: 150px;
+    height: 50px;
+    font-size: 1.5em;
+    margin: 10px;
+    background-color: rgb(19, 118, 204);
+    font-weight: bold;
+    color: aliceblue;
+    border-radius: 20px;
+}
