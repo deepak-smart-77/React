@@ -1,0 +1,10 @@
+.myDiv{
+    border: 1px solid rgba(0, 0, 0, 0.504);
+    padding: 5px;
+    font-family: arial,'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    margin: 10px;
+}
+.myDiv p{
+    margin: 0;
+}
