@@ -1,8 +1,11 @@
-import MyComponent from './MyComponent.jsx'
+import MyComponent from './Component'
 
-function App(){
-    return(<>
-        <MyComponent/>
-    </>)
+
+function App() {
+  return (
+    <>
+      <MyComponent/>
+    </>
+  );
 }
-export default App
+export default App;

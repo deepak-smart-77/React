@@ -2,25 +2,30 @@ import React, { useState } from "react";
 
 function MyComponent() {
   const [name, setName] = useState();
+  const [quantity, setQuantity] = useState(1);
+  const [comment, setComment] = useState("");
+  const [payment, setPayment] = useState("");
+  const [shipping, setShipping] = useState("Delivery");
+  
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
-  const [quantity, setQuantity] = useState(1);
+
   const handleQuantityChange = (event) => {
     setQuantity(event.target.value);
   };
-  const [comment, setComment] = useState("");
+
   const handleCommentChange = (event) => {
     setComment(event.target.value);
   };
-  const [payment, setPayment] = useState("");
+
   const handlePaymentChange = (event) => {
-    setPayment(event.target.value)
-  }
-  const [shipping, setShipping] = useState("Delivery");
+    setPayment(event.target.value);
+  };
+
   const handleShippingChange = (event) => {
-    setShipping(event.target.value)
-  }
+    setShipping(event.target.value);
+  };
   return (
     <div>
       <input type="text" value={name} onChange={handleNameChange} />
@@ -45,15 +50,22 @@ function MyComponent() {
       <p>Payment: {payment}</p>
 
       <label>
-        <input type="radio" value="Pick Up"
-                checked={shipping === "Pick Up"} 
-                onChange={handleShippingChange}/>
+        <input
+          type="radio"
+          value="Pick Up"
+          checked={shipping === "Pick Up"}
+          onChange={handleShippingChange}
+        />
         Pick Up
-      </label><br />
+      </label>
+      <br />
       <label>
-        <input type="radio" value="Delivery"
-                checked={shipping === "Delivery"} 
-                onChange={handleShippingChange}/>
+        <input
+          type="radio"
+          value="Delivery"
+          checked={shipping === "Delivery"}
+          onChange={handleShippingChange}
+        />
         Delivery
       </label>
       <p>Shipping: {shipping}</p>
